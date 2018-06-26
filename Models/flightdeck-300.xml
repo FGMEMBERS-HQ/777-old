@@ -60,7 +60,7 @@
 
 
     <model>
-        <path>Aircraft/Generic/marker.xml</path>
+        <path>Models/Aircraft/marker.xml</path>
     </model>
 
     <model>
