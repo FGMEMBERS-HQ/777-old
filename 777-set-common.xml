@@ -1,7 +1,7 @@
 <PropertyList>
 
     <sim n="0">
-        <author>Justin Smithies, Syd Adams, Thorsten Brehm, Arminair, Hyde Yamakawa, Juigi Zollo, Jean-Yves Lebleu</author>
+        <author>Justin Smithies, Syd Adams, Thorsten Brehm, Arminair</author>
         <status>production</status>
         <rating>
             <FDM type="int">4</FDM>
@@ -9,37 +9,19 @@
             <cockpit type="int">4</cockpit>
             <model type="int">4</model>
         </rating>
-        <aircraft-version>20140208</aircraft-version>
+        <aircraft-version>20130707</aircraft-version>
         <flight-model>yasim</flight-model>
         <fuel-fraction type="double">0.1</fuel-fraction>
         <model n="0">
-            <livery>
-                <file type="string">BAW</file>
-            </livery>
             <armrest type="double">0</armrest>
         </model>
-        <shutterspeed type="double">0.18</shutterspeed>
-        <instrument-options>
-            <canvas-popup-enable type="bool">true</canvas-popup-enable>
-        </instrument-options>
 
-        <navdb>
-            <!-- exclude any airports with runways shorter than this from
-            searches, NavDisplay, etc. Note this is a lower-limit - real (safe)
-            value is much higher depending on load, fuel, OAT -->
-            <min-runway-length-ft>4500</min-runway-length-ft>
-        </navdb>
-
-        <tags>
-            <tag>transport</tag>
-            <tag>boeing</tag>
-            <tag>jet</tag>
-            <tag>twin-engine</tag>
-            <tag>retractable-gear</tag>
-            <tag>etops</tag>
-            <tag>glass-cockpit</tag>
-            <tag>ifr</tag>
-        </tags>
+		<navdb>
+			<!-- exclude any airports with runways shorter than this from
+			searches, NavDisplay, etc. Note this is a lower-limit - real (safe)
+			value is much higher depending on load, fuel, OAT -->
+			<min-runway-length-ft>4500</min-runway-length-ft>
+		</navdb>
 
         <view n="0">
             <name>Pilot View</name>
@@ -146,227 +128,12 @@
             </config>
         </view>
 
-    <view n="102">
-        <name>OH Panel</name>
-        <type>lookfrom</type>
-        <internal type="bool">true</internal>
-        <config>
-            <default-field-of-view-deg type="double">70.0</default-field-of-view-deg>
-            <from-model type="bool">true</from-model>
-            <from-model-idx type="int">0</from-model-idx>
-            <pitch-offset-deg>60</pitch-offset-deg>
-            <x-offset-m type="double">0</x-offset-m>
-            <y-offset-m type="double">0.36</y-offset-m>
-        </config>
-    </view>
-
-    <view n="103">
-        <name>Right side view</name>
-        <type>lookfrom</type>
-        <internal type="bool">false</internal>
-        <config>
-            <from-model type="bool">true</from-model>
-            <from-model-idx type="int">0</from-model-idx>
-            <x-offset-m type="double">4.371291667</x-offset-m>
-            <y-offset-m type="double">0.911</y-offset-m>
-        </config>
-    </view>
-
-    <view n="104">
-        <name>Front gear view</name>
-        <type>lookfrom</type>
-        <internal type="bool">false</internal>
-        <config>
-            <from-model type="bool">true</from-model>
-            <from-model-idx type="int">0</from-model-idx>
-            <x-offset-m type="double">0.0025</x-offset-m>
-            <y-offset-m type="double">-3.2</y-offset-m>
-        </config>
-    </view>
-
-    <view n="105">
-        <name>Observer 1 view</name>
-        <type>lookfrom</type>
-        <internal type="bool">true</internal>
-        <config>
-            <default-field-of-view-deg type="double">70.0</default-field-of-view-deg>
-            <from-model type="bool">true</from-model>
-            <from-model-idx type="int">0</from-model-idx>
-            <pitch-offset-deg>-1.125</pitch-offset-deg>
-            <x-offset-m type="double">0.10544875</x-offset-m>
-            <y-offset-m type="double">0.8</y-offset-m>
-        </config>
-    </view>
-
-    <view n="106">
-        <name>Observer 2 view</name>
-        <type>lookfrom</type>
-        <internal type="bool">true</internal>
-        <config>
-            <default-field-of-view-deg type="double">70.0</default-field-of-view-deg>
-            <from-model type="bool">true</from-model>
-            <from-model-idx type="int">0</from-model-idx>
-            <pitch-offset-deg>-8.775</pitch-offset-deg>
-            <goal-heading-offset-deg>16.875</goal-heading-offset-deg>
-            <x-offset-m type="double">1.1171875</x-offset-m>
-            <y-offset-m type="double">0.8675</y-offset-m>
-        </config>
-    </view>
-
-    <view n="107">
-        <name>Top Left view</name>
-        <type>lookfrom</type>
-        <internal type="bool">true</internal>
-        <config>
-            <default-field-of-view-deg type="double">70.0</default-field-of-view-deg>
-            <from-model type="bool">true</from-model>
-            <from-model-idx type="int">0</from-model-idx>
-            <pitch-offset-deg>-19.125</pitch-offset-deg>
-            <goal-heading-offset-deg>333</goal-heading-offset-deg>
-            <x-offset-m type="double">-0.65625</x-offset-m>
-            <y-offset-m type="double">1.2175</y-offset-m>
-        </config>
-    </view>
-
-    <view n="108">
-        <name>Top Right view</name>
-        <type>lookfrom</type>
-        <internal type="bool">true</internal>
-        <config>
-            <default-field-of-view-deg type="double">70.0</default-field-of-view-deg>
-            <from-model type="bool">true</from-model>
-            <from-model-idx type="int">0</from-model-idx>
-            <pitch-offset-deg>-19.125</pitch-offset-deg>
-            <goal-heading-offset-deg>63</goal-heading-offset-deg>
-            <x-offset-m type="double">0.65625</x-offset-m>
-            <y-offset-m type="double">1.2175</y-offset-m>
-        </config>
-    </view>
-
-<view n="109">
-    <name>LWing View</name>
-    <type>lookfrom</type>
-    <internal archive="y">true</internal>
-    <config>
-      <from-model type="bool">true</from-model>
-      <from-model-idx type="int">0</from-model-idx>
-      <ground-level-nearplane-m type="double">0.01</ground-level-nearplane-m>
-      <default-field-of-view-deg type="double">55</default-field-of-view-deg>
-      <pitch-offset-deg>-8.0</pitch-offset-deg>
-      <heading-offset-deg type="double">90</heading-offset-deg> <!-- parallel to the panel -->
-      <x-offset-m type="double">-2.74375</x-offset-m> <!--Left/Right-->
-      <y-offset-m type="double">1.298888889</y-offset-m> <!--Up/Down-->
-      <z-offset-m type="double">9.153333333</z-offset-m> <!--Fdw/Back-->
-    </config>
-  </view>
-
-<view n="110">
-    <name>RWing View</name>
-    <type>lookfrom</type>
-    <internal archive="y">true</internal>
-    <config>
-      <from-model type="bool">true</from-model>
-      <from-model-idx type="int">0</from-model-idx>
-      <ground-level-nearplane-m type="double">0.01</ground-level-nearplane-m>
-      <default-field-of-view-deg type="double">55</default-field-of-view-deg>
-      <pitch-offset-deg>-8.0</pitch-offset-deg>
-      <heading-offset-deg type="double">270</heading-offset-deg> <!-- parallel to the panel -->
-      <x-offset-m type="double">2.74375</x-offset-m> <!--Left/Right-->
-      <y-offset-m type="double">1.298888889</y-offset-m> <!--Up/Down-->
-      <z-offset-m type="double">9.153333333</z-offset-m> <!--Fdw/Back-->
-    </config>
-  </view>
-
-<view n="111">
-    <name>Tail View</name>
-    <type>lookfrom</type>
-    <internal archive="y">true</internal>
-    <config>
-      <from-model type="bool">true</from-model>
-      <from-model-idx type="int">0</from-model-idx>
-      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
-      <default-field-of-view-deg type="double">90</default-field-of-view-deg>
-      <pitch-offset-deg>-10.0</pitch-offset-deg>
-      <heading-offset-deg type="double">0</heading-offset-deg>
-      <x-offset-m type="double">0</x-offset-m> <!--Left/Right-->
-      <y-offset-m type="double">12.74</y-offset-m> <!--Up/Down-->
-    </config>
-  </view>
-
-<view n="112">
-    <name>EFB CPT View</name>
-    <type>lookfrom</type>
-    <internal archive="y">true</internal>
-        <config>
-            <default-field-of-view-deg type="double">27.68363868</default-field-of-view-deg>
-            <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
-            <from-model type="bool">true</from-model>
-            <from-model-idx type="int">0</from-model-idx>
-            <pitch-offset-deg>-31.16666667</pitch-offset-deg>
-            <heading-offset-deg type="double">40.875</heading-offset-deg>
-            <goal-heading-offset-deg>40.875</goal-heading-offset-deg>
-            <x-offset-m type="double">-0.5026041667</x-offset-m>
-            <y-offset-m type="double">0.8407407407</y-offset-m>
-        </config>
-</view>
-
-<view n="113">
-    <name>EFB FO View</name>
-    <type>lookfrom</type>
-    <internal archive="y">true</internal>
-        <config>
-            <default-field-of-view-deg type="double">27.68363868</default-field-of-view-deg>
-            <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
-            <from-model type="bool">true</from-model>
-            <from-model-idx type="int">0</from-model-idx>
-            <pitch-offset-deg>-31.16666667</pitch-offset-deg>
-            <heading-offset-deg type="double">-40.875</heading-offset-deg>
-            <goal-heading-offset-deg>-40.875</goal-heading-offset-deg>
-            <x-offset-m type="double">0.5026041667</x-offset-m>
-            <y-offset-m type="double">0.8407407407</y-offset-m>
-        </config>
-</view>
-
-<view n="114">
-    <name>Tiller CPT View</name>
-    <type>lookfrom</type>
-    <internal archive="y">true</internal>
-        <config>
-            <default-field-of-view-deg type="double">74.73152837</default-field-of-view-deg>
-            <ground-level-nearplane-m type="double">0.0f</ground-level-nearplane-m>
-            <from-model type="bool">true</from-model>
-            <from-model-idx type="int">0</from-model-idx>
-            <pitch-offset-deg>-19.125</pitch-offset-deg>
-            <heading-offset-deg type="double">0</heading-offset-deg>
-            <goal-heading-offset-deg>0</goal-heading-offset-deg>
-            <x-offset-m type="double">-0.9708333333</x-offset-m>
-            <y-offset-m type="double">0.7869444444</y-offset-m>
-        </config>
-</view>
-
-<view n="115">
-    <name>Tiller FO View</name>
-    <type>lookfrom</type>
-    <internal archive="y">true</internal>
-        <config>
-            <default-field-of-view-deg type="double">74.73152837</default-field-of-view-deg>
-            <ground-level-nearplane-m type="double">0.0f</ground-level-nearplane-m>
-            <from-model type="bool">true</from-model>
-            <from-model-idx type="int">0</from-model-idx>
-            <pitch-offset-deg>-19.125</pitch-offset-deg>
-            <heading-offset-deg type="double">0</heading-offset-deg>
-            <goal-heading-offset-deg>0</goal-heading-offset-deg>
-            <x-offset-m type="double">0.9708333333</x-offset-m>
-            <y-offset-m type="double">0.7869444444</y-offset-m>
-        </config>
-</view>
-
         <help n="0">
             <title>777</title>
             <text>=== Tutorials ===
 Interactive tutorials are available to introduce you to this aircraft and its cockpit instruments.
 See main menu: "Help" - "Tutorials".
-
+ 
 === Takeoff Procedure ===
 Pre-departure:
 1. - Allocate your fuel, passengers and weight under Equipment/fuel and payload
@@ -411,19 +178,11 @@ Service Ceiling: 43,100ft
             </key>
             <key>
                 <name>Ctrl-B</name>
-                <desc>toggle Speedbrake</desc>
+                <desc>toggle spoilers</desc>
             </key>
             <key>
-                <name>=</name>
-                <desc>toggle arm Speedbrake</desc>
-            </key>
-            <key>
-                <name>}</name>
-                <desc>increase Speedbrake</desc>
-            </key>
-            <key>
-                <name>{</name>
-                <desc>decrease Speedbrake</desc>
+                <name>Ctrl-I</name>
+                <desc>toggle auto spoilers</desc>
             </key>
             <key>
                 <name>L</name>
@@ -490,14 +249,6 @@ Service Ceiling: 43,100ft
                             <property>sim/yokes-visible</property>
                         </binding>
                     </item>
-                    <item >
-                        <label>Handy Viewer</label>
-                        <name>handyviewer</name>
-                        <binding>
-                            <command>dialog-show</command>
-                            <dialog-name>handyviewer</dialog-name>
-                        </binding>
-                    </item>
                 </menu>
             </default>
         </menubar>
@@ -533,24 +284,25 @@ Service Ceiling: 43,100ft
         </multiplay>
 
         <flight-recorder include="Systems/flight-recorder.xml"/>
-        <checklists include="777-checklists.xml"/>
+		<checklists include="777-checklists.xml"/>
 
         <dimensions>
             <radius-m type="double">32</radius-m>
             <parkpos-offset-m type="double">0.0</parkpos-offset-m>
         </dimensions>
         <aircraft-class type="string">gate</aircraft-class>
+        <aircraft-operator>BAW</aircraft-operator>
         <aircraft-data>
-            <path>sim/dimensions/radius-m</path>
-            <path>sim/dimensions/parkpos-offset-m</path>
-            <path>sim/aircraft-class</path>
-            <path>sim/aircraft-operator</path>
-            <path>sim/view[100]/enabled</path>
-            <path>sim/view[101]/enabled</path>
-            <path>sim/yokes-visible</path>
-            <path>controls/gear/tiller-enabled</path>
-            <path>sim/weight[0]/weight-lb</path>
-            <path>sim/weight[1]/weight-lb</path>
+            <path>/sim/dimensions/radius-m</path>
+            <path>/sim/dimensions/parkpos-offset-m</path>
+            <path>/sim/aircraft-class</path>
+            <path>/sim/aircraft-operator</path>
+            <path>/sim/view[100]/enabled</path>
+            <path>/sim/view[101]/enabled</path>
+            <path>/sim/yokes-visible</path>
+            <path>/controls/gear/tiller-enabled</path>
+            <path>/sim/weight[0]/weight-lb</path>
+            <path>/sim/weight[1]/weight-lb</path>
         </aircraft-data>
         <weight n="0"><weight-lb type="double">400</weight-lb></weight>
 
@@ -588,6 +340,9 @@ Service Ceiling: 43,100ft
                 <name>Autobrake system</name>
                 <path>Aircraft/777/Systems/777-autobrake.xml</path>
             </autopilot>
+            <autopilot>
+                <path>Aircraft/Generic/generic-autopilot-helper.xml</path>
+            </autopilot>
 
             <!--  slow running property-rules (running at frame rate) -->
             <property-rule n="100">
@@ -595,9 +350,6 @@ Service Ceiling: 43,100ft
             </property-rule>
             <property-rule n="101">
                 <path>Aircraft/777/Systems/777-PFD.xml</path>
-            </property-rule>
-            <property-rule n="102">
-                <path>Aircraft/777/Systems/777-pcu.xml</path>
             </property-rule>
         </systems>
 
@@ -607,7 +359,7 @@ Service Ceiling: 43,100ft
 
         <sound>
             <path>Aircraft/777/Sounds/777-sound.xml</path>
-            <stall type="bool">0</stall>
+            <stall-horn type="bool">0</stall-horn>
             <click1 type="bool">0</click1>
             <click2 type="bool">0</click2>
             <click3 type="bool">0</click3>
@@ -616,9 +368,6 @@ Service Ceiling: 43,100ft
             <click6 type="bool">0</click6>
             <click7 type="bool">0</click7>
             <click8 type="bool">0</click8>
-            <click9 type="bool">0</click9>
-            <FastenSeatbelt type="bool">0</FastenSeatbelt>
-            <cabinalert type="bool">0</cabinalert>
         </sound>
 
         <hud>
@@ -672,11 +421,11 @@ Service Ceiling: 43,100ft
                 <desc>Toggle Reversers</desc>
                 <binding>
                     <command>property-toggle</command>
-                    <property>controls/engines/engine[0]/reverser</property>
+                    <property>controls/engines/engine[0]/reverser-cmd</property>
                 </binding>
                 <binding>
                     <command>property-toggle</command>
-                    <property>controls/engines/engine[1]/reverser</property>
+                    <property>controls/engines/engine[1]/reverser-cmd</property>
                 </binding>
             </key>
             <key n="267">
@@ -707,8 +456,8 @@ Service Ceiling: 43,100ft
                 <name>Ctrl-G</name>
                 <desc>APP mode arm</desc>
                 <binding>
-                    <command>nasal</command>
-                    <script>b777.afds.input(3,1);</script>
+					<command>nasal</command>
+					<script>b777.afds.input(3,1);</script>
                 </binding>
             </key>
             <key n="8">
@@ -717,6 +466,14 @@ Service Ceiling: 43,100ft
                 <binding>
                     <command>nasal</command>
                     <script>b777.afds.input(0,1);</script>
+                </binding>
+            </key>
+            <key n="9">
+                <name>Ctrl-I</name>
+                <desc>toggle auto spoilers</desc>
+                <binding>
+                    <command>nasal</command>
+                    <script>controls.toggleAutoSpoilers();</script>
                 </binding>
             </key>
             <key n="12">
@@ -740,7 +497,7 @@ Service Ceiling: 43,100ft
                 <desc>A/P ~ Engage/Disengage</desc>
                 <binding>
                     <command>property-toggle</command>
-                    <property>instrumentation/afds/inputs/AP</property>
+ 					<property>instrumentation/afds/inputs/AP</property>
                 </binding>
             </key>
             <key n="16">
@@ -781,7 +538,7 @@ Service Ceiling: 43,100ft
                 <desc>Roll trim-- Left</desc>
                 <binding>
                     <command>property-adjust</command>
-                    <property>controls/flight/aileron-trim</property>
+                    <property>/controls/flight/aileron-trim</property>
                     <step type="double">-0.012</step>
                 </binding>
             </key>
@@ -791,40 +548,11 @@ Service Ceiling: 43,100ft
                 <desc>Roll trim++ Right</desc>
                 <binding>
                     <command>property-adjust</command>
-                    <property>controls/flight/aileron-trim</property>
+                    <property>/controls/flight/aileron-trim</property>
                     <step type="double">0.012</step>
                 </binding>
             </key>
-            <key n="49">
-                <name>1</name>
-                <desc>nose up stab trim</desc>
-                <binding>
-                    <command>nasal</command>
-                    <script>
-                        controls.elevatorTrim(-1);
-                        gui.popupTip(sprintf("Elevator trim: %d", 100 * getprop("/controls/flight/elevator-trim")));
-                    </script>
-                </binding>
-            </key>
-            <key n="55">
-                <name>7</name>
-                <desc>nose down stab trim</desc>
-                <binding>
-                    <command>nasal</command>
-                    <script>
-                        controls.elevatorTrim(1);
-                        gui.popupTip(sprintf("Elevator trim: %d", 100 * getprop("/controls/flight/elevator-trim")));
-                    </script>
-                </binding>
-            </key>
-            <key n="61">
-                <name>=</name>
-                <desc>toggle auto spoilers</desc>
-                <binding>
-                    <command>nasal</command>
-                    <script>controls.toggleAutoSpoilers();</script>
-                </binding>
-            </key>
+
              <key n="108">
                 <name>l</name>
                 <desc>toggle landing lights</desc>
@@ -849,59 +577,10 @@ Service Ceiling: 43,100ft
                     <script>controls.autostart();</script>
                 </binding>
             </key>
-            <key n="123">
-                <name>{</name>
-                <repeatable type="bool">true</repeatable>
-                <desc>Air Brake--</desc>
-                <binding>
-                    <command>property-adjust</command>
-                    <property>controls/flight/speedbrake-lever</property>
-                    <step type="double">-0.01</step>
-                    <min>1</min>
-                    <max>2</max>
-                </binding>
-            </key>
-            <key n="125">
-                <name>}</name>
-                <repeatable type="bool">true</repeatable>
-                <desc>Air Brake++</desc>
-                <binding>
-                    <command>property-adjust</command>
-                    <property>controls/flight/speedbrake-lever</property>
-                    <step type="double">0.01</step>
-                    <min>1</min>
-                    <max>2</max>
-                </binding>
-            </key>
-            <key n="362">
-                <name>Home</name>
-                <desc>nose down stab trim</desc>
-                <binding>
-                    <command>nasal</command>
-                    <script>
-                        controls.elevatorTrim(1);
-                        gui.popupTip(sprintf("Elevator trim: %d", 100 * getprop("/controls/flight/elevator-trim")));
-                    </script>
-                </binding>
-            </key>
-            <key n="363">
-                <name>End</name>
-                <desc>nose up stab trim</desc>
-                <binding>
-                    <command>nasal</command>
-                    <script>
-                        controls.elevatorTrim(-1);
-                        gui.popupTip(sprintf("Elevator trim: %d", 100 * getprop("/controls/flight/elevator-trim")));
-                    </script>
-                </binding>
-            </key>
         </keyboard>
     </input>
 
     <instrumentation n="0">
-        <altimeter>
-            <source-barometric type="string">L</source-barometric>
-        </altimeter>
         <inst-vertical-speed-indicator>
             <serviceable type="bool">true</serviceable>
         </inst-vertical-speed-indicator>
@@ -918,7 +597,7 @@ Service Ceiling: 43,100ft
                 <abs-altitude type="bool" archive="y">false</abs-altitude>
             </display-controls>
             <serviceable type="bool">true</serviceable>
-            <range n="0" alias="/instrumentation/efis/inputs/range-nm"/>
+            <range n="0" alias="/instrumentation/efis/inputs/range"/>
             <reference-range-nm type="double" archive="y">640</reference-range-nm>
             <mode type="string" archive="y">WX</mode>
             <font>
@@ -955,8 +634,8 @@ Service Ceiling: 43,100ft
                 <line-spacing type="float">0.01</line-spacing>
             </font>
             <lightning type="bool">true</lightning>
-            <radar-texture-path type="string">Aircraft/777/Models/Instruments/ND/od_wxradar.png</radar-texture-path>
-            <echo-texture-path type="string">Aircraft/777/Models/Instruments/ND/wxecho.png</echo-texture-path>
+            <radar-texture-path type="string">Aircraft/777/Models/Instruments/MFD/od_wxradar.png</radar-texture-path>
+            <echo-texture-path type="string">Aircraft/777/Models/Instruments/MFD/wxecho.png</echo-texture-path>
             <minimized type="bool">false</minimized>
             <heading-marker type="bool">true</heading-marker>
             <limit-deg type="int">360</limit-deg>
@@ -971,7 +650,7 @@ Service Ceiling: 43,100ft
                    255 <!-- aircraft type T1, fast turbofan -->
                 </category-1>
                 <category-4>                    <!-- ALTITUDE_CALLOUTS -->
-                    13 <!-- enable all altitude callouts -->
+                    11 <!-- enable all altitude callouts -->
                 </category-4>
                 <category-8>                    <!-- RADIO_ALTITUDE_INPUT_SELECT -->
                      3 <!-- use precise (but YASim-specific) gear altitude -->
@@ -981,7 +660,7 @@ Service Ceiling: 43,100ft
                 </category-13>
             </configuration-module>
             <voice>
-                <file-prefix type="string">Aircraft/777/Sounds/GPWS/</file-prefix>
+                <file-prefix type="string">Sounds/mk-viii/</file-prefix>
             </voice>
             <inputs>                            <!-- Module I/O -->
                 <arinc429>
@@ -1025,86 +704,47 @@ Service Ceiling: 43,100ft
                 <arpt type="bool">false</arpt>
                 <wpt  type="bool">false</wpt>
                 <wxr  type="bool">false</wxr>
-                <range-nm type="int">10</range-nm>
+                <range type="int">10</range>
             </inputs>
-            <mfd>
-                <display-type type="string">LCD</display-type>
-            </mfd>
-        </efis>
-        <efis n="1">
-            <inputs>
-                <tfc  type="bool">false</tfc>
-                <sta  type="bool">false</sta>
-                <arpt type="bool">false</arpt>
-                <wpt  type="bool">false</wpt>
-                <wxr  type="bool">false</wxr>
-                <range-nm type="int">10</range-nm>
-            </inputs>
-            <mfd>
-                <display-type type="string">LCD</display-type>
-            </mfd>
+            <eicas>
+                <msg n="0">
+                    <text>TESTING TESTING</text>
+                    <red>0.8</red>
+                    <green>0.4</green>
+                    <blue>0.2</blue>
+                    <alpha>0.5</alpha>
+                </msg>
+            </eicas>
         </efis>
         <rmu>
             <unit n="0">
-                <vhf-l type="int">1</vhf-l>
-                <vhf-r type="int">0</vhf-r>
-                <vhf-c type="int">0</vhf-c>
-                <hf-l type="int">0</hf-l>
-                <hf-r type="int">0</hf-r>
-                <selected-mhz  type="double">119.10</selected-mhz>
-                <standby-mhz  type="double">125.00</standby-mhz>
+                <source-index type="int">0</source-index>
+                <source type="string">comm1</source>
             </unit>
             <unit n="1">
-                <vhf-l type="int">0</vhf-l>
-                <vhf-r type="int">1</vhf-r>
-                <vhf-c type="int">0</vhf-c>
-                <hf-l type="int">0</hf-l>
-                <hf-r type="int">0</hf-r>
-                <selected-mhz  type="double">119.30</selected-mhz>
-                <standby-mhz type="double">115.70</standby-mhz>
+                <source-index type="int">2</source-index>
+                <source type="string">nav1</source>
             </unit>
             <unit n="2">
-                <vhf-l type="int">0</vhf-l>
-                <vhf-r type="int">0</vhf-r>
-                <vhf-c type="int">1</vhf-c>
-                <hf-l type="int">0</hf-l>
-                <hf-r type="int">0</hf-r>
-                <selected-mhz  type="double">119.50</selected-mhz>
-                <standby-mhz type="double">135.70</standby-mhz>
+                <source-index type="int">5</source-index>
+                <source type="string">adf</source>
             </unit>
         </rmu>
-        <comm>
-            <frequencies>
-                <selected-mhz  type="double">119.10</selected-mhz>
-                <standby-mhz  type="double">125.00</standby-mhz>
-            </frequencies>
-            <volume type="double">0</volume>
-        </comm>
-        <comm n="1">
-            <frequencies>
-                <selected-mhz  type="double">119.30</selected-mhz>
-                <standby-mhz type="double">115.70</standby-mhz>
-            </frequencies>
-            <volume type="double">0</volume>
-        </comm>
-        <comm n="2">
-            <frequencies>
-                <selected-mhz  type="double">119.50</selected-mhz>
-                <standby-mhz type="double">135.70</standby-mhz>
-            </frequencies>
-            <volume type="double">0</volume>
-        </comm>
         <nav>
             <frequencies>
-                <selected-mhz  type="double">109.50</selected-mhz>
-                <standby-mhz type="double">109.55</standby-mhz>
+                <standby-mhz n="1" type="double">109.50</standby-mhz>
+                <standby-mhz n="2" type="double">109.55</standby-mhz>
+                <standby-mhz n="3" type="double">110.10</standby-mhz>
+                <standby-mhz n="4" type="double">111.70</standby-mhz>
             </frequencies>
             <volume type="double">0</volume>
         </nav>
         <nav n="1">
             <frequencies>
-                <selected-mhz  type="double">110.10</selected-mhz>
-                <standby-mhz type="double">111.70</standby-mhz>
+                <standby-mhz n="1" type="double">109.50</standby-mhz>
+                <standby-mhz n="2" type="double">109.55</standby-mhz>
+                <standby-mhz n="3" type="double">110.10</standby-mhz>
+                <standby-mhz n="4" type="double">111.70</standby-mhz>
             </frequencies>
             <volume type="double">0</volume>
         </nav>
@@ -1122,15 +762,8 @@ Service Ceiling: 43,100ft
         </dme>
         <transponder>
             <serviceable>true</serviceable>
-            <id-code type="int">1200</id-code>
-            <id-code type="int">1200</id-code>
-            <id-code type="int">2400</id-code>
-            <id-code-digit0 type="int">1</id-code-digit0>
-            <id-code-digit1 type="int">2</id-code-digit1>
-            <id-code-digit2 type="int">0</id-code-digit2>
-            <id-code-digit3 type="int">0</id-code-digit3>
-            <mode-switch type="int">4</mode-switch>
-            <tx-switch type="int">0</tx-switch>
+            <id-code>1200</id-code>
+            <mode-switch>4</mode-switch>
         </transponder>
         <encoder>
             <serviceable>true</serviceable>
@@ -1141,32 +774,68 @@ Service Ceiling: 43,100ft
             <input type="string"/>
         </cdu>
         <fmc>
-            <to-flap type="double">15</to-flap>
+            <to-flap type="double">0.66</to-flap>
+            <vspeeds>
+                <V1 type="double">100</V1>
+                <VR type="double">130</VR>
+                <V2 type="double">140</V2>
+                <Vref type="double">140</Vref>
+            </vspeeds>
         </fmc>
         <gps>
             <config>
                 <min-runway-length-ft type="double">5000</min-runway-length-ft>
             </config>
         </gps>
-        <efb include="Models/Instruments/EFB/TimeZones.xml"/>
+        <nd>
+            <radar-texture-path type="string">Aircraft/777/Models/Instruments/MFD/od_wxradar.png</radar-texture-path>
+            <symbol-texture-path type="string">Aircraft/777/Models/Instruments/MFD/nd_symbols.png</symbol-texture-path>
+            <symbol-texture-size type="int">512</symbol-texture-size>
+			
+			<font>
+                <color>
+                    <red type="float">0.7</red>
+                    <green type="float">0.7</green>
+                    <blue type="float">0.7</blue>
+                    <alpha type="float">1</alpha>
+                </color>
+                <name type="string">helvetica_bold.txf</name>
+                <size type="float">20</size>
+                <line-spacing type="float">0.01</line-spacing>
+            </font>
+            <serviceable type="bool">true</serviceable>
+            <range n="0" alias="/instrumentation/efis/inputs/range"/>
+            <aircraft-heading-up type="bool">true</aircraft-heading-up>
+            <heading-up-deg type="float">0.01</heading-up-deg>
+            <x-center type="float">0.5</x-center>
+            <y-center type="float">0.5</y-center>
+			<line-width type="double">3</line-width>
+			
+			<symbols>
+			</symbols>
+        </nd>
     </instrumentation>
 
     <controls n="0">
         <gear>
             <brake-parking type="bool">1</brake-parking>
             <tiller-cmd-norm type="double">0</tiller-cmd-norm>
-            <tiller-enabled type="bool">true</tiller-enabled>
+            <tiller-enabled type="bool">false</tiller-enabled>
             <nosegear-steering-cmd-norm type="double">0</nosegear-steering-cmd-norm>
             <maingear-steering-cmd-norm type="double">0</maingear-steering-cmd-norm>
         </gear>
         <flight>
-            <speedbrake-lever type="double">0</speedbrake-lever>
-            <trim-ref-speed type="double">0</trim-ref-speed>
+            <speedbrake-lever type="int">0</speedbrake-lever>
         </flight>
-        <cabin>
-            <NoSmoking-knob type="int" >1 </NoSmoking-knob>
-            <SeatBelt-knob type="int" >1 </SeatBelt-knob>
-        </cabin>
+        <engines>
+            <autostart-button type="bool">0</autostart-button>
+            <autostart-knob type="int" n="0">0</autostart-knob>
+            <autostart-knob type="int" n="1">0</autostart-knob>
+        </engines>
+		<cabin>
+			<NoSmoking-knob type="int" >1 </NoSmoking-knob>
+			<SeatBelt-knob type="int" >1 </SeatBelt-knob>
+		</cabin>
     </controls>
 
     <autopilot n="0">
@@ -1178,51 +847,33 @@ Service Ceiling: 43,100ft
                  <pilot-input type="double">0.25</pilot-input>
             </config>
         </autobrake>
-        <internal>
-            <stab-target type="double">0</stab-target>
-        </internal>
         <locks>
             <pitch-engaged type="bool">1</pitch-engaged>
             <roll-engaged type="bool">1</roll-engaged>
-            <takeoff-mode type="bool">0</takeoff-mode>
+			<takeoff-mode type="bool">0</takeoff-mode>
         </locks>
-        <settings>
+		<settings>
             <transition-altitude type="double">18000</transition-altitude>
-        </settings>
+		</settings>
     </autopilot>
 
     <nasal n="0">
-        <raas>
-            <file>Aircraft/777/Nasal/raas.nas</file>
-        </raas>
         <b777>
-            <file>Aircraft/777/Nasal/Air.nas</file>
             <file>Aircraft/777/Nasal/Electrical.nas</file>
-            <file>Aircraft/777/Nasal/engine.nas</file>
-            <file>Aircraft/777/Nasal/efb.nas</file>
-            <file>Aircraft/777/Nasal/Hydraulics.nas</file>
             <file>Aircraft/777/Nasal/systems.nas</file>
             <file>Aircraft/777/Nasal/AFDS.nas</file>
             <file>Aircraft/777/Nasal/tyresmoke.nas</file>
             <file>Aircraft/777/Nasal/gpws.nas</file>
             <file>Aircraft/777/Nasal/warnsystem.nas</file>
-            <file>Aircraft/777/Nasal/Cabinalert.nas</file>
             <file>Aircraft/777/Nasal/brakesystem.nas</file>
             <file>Aircraft/777/Nasal/ground_steering.nas</file>
-            <file>Aircraft/777/Models/Instruments/ND/ND.nas</file>
-            <file>Aircraft/777/Models/Instruments/MFD/mfd.nas</file>
-            <file>Aircraft/777/Models/Instruments/MFD/fctl.nas</file>
-            <file>Aircraft/777/Models/Instruments/MFD/eng.nas</file>
-            <file>Aircraft/777/Models/Instruments/MFD/fuel.nas</file>
-            <file>Aircraft/777/Nasal/SWanimation.nas</file>
-            <file>Aircraft/777/Nasal/runway.nas</file>
             <file>Aircraft/Generic/limits.nas</file>
         </b777>
         <dialogs>
             <file>Aircraft/777/Nasal/dialogs.nas</file>
         </dialogs>
         <cdu>
-            <file>Aircraft/777/Models/Instruments/CDU/boeing.nas</file>
+            <file>Aircraft/Instruments-3d/cdu/boeing.nas</file>
         </cdu>
     </nasal>
 
@@ -1256,5 +907,5 @@ Service Ceiling: 43,100ft
         <max-positive-g>2.5</max-positive-g>
         <max-negative-g>-1.76</max-negative-g>
     </limits>
-
+	
 </PropertyList>

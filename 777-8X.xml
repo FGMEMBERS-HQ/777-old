@@ -1,20 +1,48 @@
-<!--777-200 LR yasim
+<!--777-8X yasim
 
-The 777-200LR ("LR" for Longer Range), the C-market model, became the world's longest-range commercial airliner when it entered service in 2006.Boeing named this aircraft the Worldliner, highlighting its ability to connect almost any two airports in the world. It holds the world record for the longest nonstop flight by a commercial airliner, and has a maximum range of 9,380 nautical miles (17,370 km). The ∁E00LR was intended for ultra-long-haul routes such as Los Angeles to Singapore.
+Specs:
+777-8X - 470 kN (105,000lb) General Electric GE9X-105B1A
 
-Developed alongside the ∁E00ER, the ∁E00LR features an increased MTOW and three optional auxiliary fuel tanks in the rear cargo hold. Other new features include raked wingtips, redesigned main landing gear, and additional structural strengthening. As with the ∁E00ER and 777F, the ∁E00LR is equipped with wingtip extensions of 12.8 ft (3.90 m). The -200LR is powered by GE90-110B1 or GE90-115B turbofans. The first ∁E00LR was delivered to Pakistan International Airlines on February 26, 2006.As of July 2011, nine different ∁E00LR customers have taken delivery of 52 aircraft, with 3 unfilled orders. Airlines operated 48 of the -200LR variant as of July 2011. The closest competing aircraft from Airbus is the A340-500HGW.
+Typical Cruise = 0.84 Mach / 35000 ft
+Max Speed = 0.87 / 35000 ft
 
-(Taken from the Wikipedia)
+777-8X - Range with 365 passengers 16,110 km (8,700nm) - 17hrs.
 
-777-200LR - Range with 301 passengers 17,3957km (9,395nm) - 19hrs.
-
-Wing span: 64.8m
-Length: 63.7 m
-Tail Height: 18.6m
+Wing span: 71.8
+Length: 69.8 m
+Tail Height: 19.7m
 Diameter : 6.19 m
-Max Fuel :53,515 US gal
-Max TO weight: 766,000 lbs
-Max Landing weight: 492,000 lbs
+Max Fuel :47,890 US gal
+Max TO weight: 775,000 lbs
+Max Landing weight: 587,000 lbs
+
+TO speed : 145 kt
+Landing speed : 131 kt
+
+Leading edge MAC = -3.132
+
+Vr 137
+V2 147
+
+Datum 92.5 in forward of nose - 2.3495 m
+MAC 278.51 in - 7.074154 m
+
+            FLAPS
+            30   25   20
+WEIGHT/lbs  Vref
+550,000     151  159  164
+528,000     148  156  161
+506,000     145  152  158
+484,000     142  149  154
+462,000     139  145  150
+440,000     135  142  147
+418,000     132  138  143
+396,000     128  134  139
+374,000     124  131  135
+352,000     121  127  131
+330,000     117  123  127
+308,000     113  118  123
+
 -->
 
 <airplane mass="326000">
@@ -94,14 +122,14 @@ Max Landing weight: 492,000 lbs
                     min="1" max="-1"/>
   </vstab>
 
-<!-- General Electric GE90-115B
+<!-- General Electric GE9X-105B1A -->
 
 
 General characteristics
 
     Type: axial flow, twin-shaft, bypass turbofan engine
     Length: 287 in (7,290 mm)[14]
-    Diameter: overall: 135 in (3.429 m);[14] fan: 128 in (3.251 m)
+    Diameter: overall: 138 in (3.5052 m);[14] fan: 134 in (3.4036 m)
     Dry weight: 18,260 lb (8,283 kg)[14]
 
 Components

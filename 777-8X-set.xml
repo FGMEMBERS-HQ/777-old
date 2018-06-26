@@ -1,20 +1,20 @@
 <PropertyList include="777-set-common.xml">
 
     <sim n="0">
-        <description>Boeing 777-200LR with GE90-115B engines</description>
-        <aero>777-200LR</aero>
+        <description>Boeing 777-8X with GE9X-105B1A engines</description>
+        <aero>777-8X</aero>
         <max-payload type="double">440000</max-payload>
         <startup>
-            <splash-texture>Aircraft/777/splash-200LR.png</splash-texture>
+            <splash-texture>Aircraft/777/splash-8x.png</splash-texture>
         </startup>
 
         <model n="0">
-            <path>Aircraft/777/Models/777-200LR.xml</path>
+            <path>Aircraft/777/Models/777-8X.xml</path>
             <livery>
-                <file type="string">BA</file>
+                <file type="string">BOE 2.png</file>
             </livery>
             <lights>
-                <file type="string">BA</file>
+                <file type="string">BOE 2</file>
             </lights>
         </model>
         <view n="0">
@@ -36,7 +36,7 @@
        <menubar n="0">
             <default n="0">
                 <menu n="100">
-                    <label>777-200LR</label>
+                    <label>777-8X</label>
                 </menu>
             </default>
         </menubar>
@@ -71,8 +71,8 @@
     <instrumentation n="0">
         <cdu n="0">
             <ident>
-                <model>777-200LR</model>
-                <engines>GE90-115B</engines>
+                <model>777-8X</model>
+                <engines>GE9X-105B1A</engines>
             </ident>
         </cdu>
     </instrumentation>

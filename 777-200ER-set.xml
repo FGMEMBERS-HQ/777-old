@@ -1,30 +1,19 @@
 <PropertyList include="777-set-common.xml">
 
     <sim n="0">
-        <description>Boeing 777-200ER</description>
+        <description>Boeing 777-200ER with Rolls Royce Trent 895 engines</description>
         <aero>777-200ER</aero>
         <max-payload type="double">341000</max-payload>
-        <max-landing-weight type="double">460000</max-landing-weight>
         <startup>
             <splash-texture>Aircraft/777/splash-200ER.png</splash-texture>
         </startup>
 
-        <variant-of>777-200</variant-of>
-
         <model n="0">
             <path>Aircraft/777/Models/777-200ER.xml</path>
-            <door>
-                <position-x-m type="float">-18.30</position-x-m>
-                <position-y-m type="float"> -2.95</position-y-m>
-                <position-z-m type="float"> -0.42</position-z-m>
-                <jetway-hood-deg type="float">3</jetway-hood-deg>
-            </door>
-            <door>
-                <position-x-m type="float">-7.67</position-x-m>
-                <position-y-m type="float"> -2.95</position-y-m>
-                <position-z-m type="float"> -0.42</position-z-m>
-                <jetway-hood-deg type="float">3</jetway-hood-deg>
-            </door>
+            <livery>
+                <file type="string">BA</file>
+                <texture>Liveries-200/paint1.png</texture>
+            </livery>
         </model>
         <view n="0">
             <config n="0">
@@ -39,66 +28,6 @@
         <view n="101">
             <config n="0">
                 <z-offset-m type="double">-22.84</z-offset-m>
-            </config>
-        </view>
-        <view n="102">
-            <config n="0">
-                <z-offset-m type="double">-22.46</z-offset-m>
-            </config>
-        </view>
-        <view n="103">
-            <config n="0">
-            <z-offset-m type="double">-7.109888889</z-offset-m>
-            </config>
-        </view>
-        <view n="104">
-            <config n="0">
-            <z-offset-m type="double">-21.5</z-offset-m>
-            </config>
-        </view>
-        <view n="105">
-            <config n="0">
-            <z-offset-m type="double">-21.66375</z-offset-m>
-            </config>
-        </view>
-        <view n="106">
-            <config n="0">
-            <z-offset-m type="double">-21.74</z-offset-m>
-            </config>
-        </view>
-        <view n="107">
-            <config n="0">
-            <z-offset-m type="double">-22.31125</z-offset-m>
-            </config>
-        </view>
-        <view n="108">
-            <config n="0">
-            <z-offset-m type="double">-22.31125</z-offset-m>
-            </config>
-        </view>
-        <view n="111">
-            <config n="0">
-            <z-offset-m type="double">35.38240741</z-offset-m>
-            </config>
-        </view>
-        <view n="112">
-            <config n="0">
-            <z-offset-m type="double">-22.62777778</z-offset-m>
-            </config>
-        </view>
-        <view n="113">
-            <config n="0">
-            <z-offset-m type="double">-22.62777778</z-offset-m>
-            </config>
-        </view>
-        <view n="114">
-            <config n="0">
-            <z-offset-m type="double">-22.31125</z-offset-m>
-            </config>
-        </view>
-        <view n="115">
-            <config n="0">
-            <z-offset-m type="double">-22.31125</z-offset-m>
             </config>
         </view>
 
@@ -127,7 +56,6 @@
             <max-lb type="double">131000</max-lb>
             <min-lb type="double">0</min-lb>
         </weight>
-        <aircraft-operator>BAW</aircraft-operator>
     </sim>
 
     <instrumentation n="0">
@@ -142,11 +70,11 @@
     <autopilot n="0">
         <constant>
             <flare-base type="double">0.2</flare-base>
-            <flch-thrust type="double">0.77</flch-thrust>
-            <descent-profile-high-base type="double">0.18</descent-profile-high-base>
-            <descent-profile-high-rate type="double">-0.00096774</descent-profile-high-rate>
-            <descent-profile-low-base type="double">0.13</descent-profile-low-base>
-            <descent-profile-low-rate type="double">-0.00029032</descent-profile-low-rate>
+			<derate-lowalt type="double">0.77</derate-lowalt>
+			<descent-profile-high-base type="double">0.18</descent-profile-high-base>
+			<descent-profile-high-rate type="double">-0.00096774</descent-profile-high-rate>
+			<descent-profile-low-base type="double">0.13</descent-profile-low-base>
+			<descent-profile-low-rate type="double">-0.00029032</descent-profile-low-rate>
         </constant>
     </autopilot>
 

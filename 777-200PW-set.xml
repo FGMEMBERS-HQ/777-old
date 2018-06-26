@@ -1,7 +1,7 @@
 <PropertyList include="777-set-common.xml">
 
     <sim n="0">
-        <description>Boeing 777-200 with Rolls Royce Trent 877 engines</description>
+        <description>Boeing 777-200 with Pratt & Whitney PW4077 engines</description>
         <aero>777-200</aero>
 	    <max-payload type="double">238000</max-payload>
         <startup>
@@ -64,7 +64,7 @@
         <cdu n="0">
             <ident n="0">
                 <model>777-200</model>
-                <engines>RR Trent 877</engines>
+                <engines>PW4077</engines>
             </ident>
         </cdu>
     </instrumentation>
