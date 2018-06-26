@@ -4,9 +4,12 @@
 <sim>
     <model>
         <livery>
-            <name type="string">SIA Singapore Airlines (Star Alliance)</name>
-            <texture>Liveries-300/SIA-SA.png</texture>
+            <name type="string">Singapore Airlines (Star Alliance)</name>
+            <texture>Liveries-ER/SIA-SA.png</texture>
         </livery>
+		<lights>
+			<texture>Liveries-ER/SIA-SA-lights.png</texture>
+		</lights>
     </model>
 </sim>
 </PropertyList>
