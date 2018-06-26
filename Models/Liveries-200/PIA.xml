@@ -4,11 +4,11 @@
 <sim>
     <model>
         <livery>
-            <name type="string">PIA Pakistan International Airlines </name>
+            <name type="string">PIA Pakistan International</name>
             <texture>Liveries-200/PIA.png</texture>
         </livery>
     </model>
     <aircraft-class>gate</aircraft-class>
-   	<aircraft-operator>PIA</aircraft-operator>
+    <aircraft-operator>PIA</aircraft-operator>
 </sim>
 </PropertyList>
