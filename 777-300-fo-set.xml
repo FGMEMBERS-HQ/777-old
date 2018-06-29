@@ -1,6 +1,6 @@
 <PropertyList include="777-fo-set-common.xml">
     <sim>
-        <description>Boeing 777-300 (First Officer)</description>
+        <description>Boeing 777-300 (First Officer) with GE90-94B engines</description>
         <aero>777-300</aero>
         <variant-of>777-300</variant-of>
         <startup>
