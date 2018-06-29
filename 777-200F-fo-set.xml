@@ -1,6 +1,6 @@
 <PropertyList include="777-fo-set-common.xml">
     <sim>
-        <description>Boeing 777-200F (First Officer)</description>
+        <description>Boeing 777-200F (First Officer) with GE90-115B engines</description>
         <aero>777-200F</aero>
         <startup>
             <splash-texture>Aircraft/777/splash-cargo.png</splash-texture>
