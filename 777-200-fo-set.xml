@@ -1,6 +1,6 @@
 <PropertyList include="777-fo-set-common.xml">
     <sim>
-        <description>Boeing 777-200 (First Officer)</description>
+        <description>Boeing 777-200 (First Officer) with Rolls Royce Trent 877 engines</description>
         <aero>777-200</aero>
         <variant-of>777-200</variant-of>
         <startup>
